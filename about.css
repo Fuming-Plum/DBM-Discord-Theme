@@ -1,0 +1,76 @@
+body {
+	color: var(--white);
+	background-color: var(--darkish);
+	background-image: none;
+	overflow: hidden;
+	/*transition: .5s ease-in-out;*/
+	animation-name: bg_animation;
+	animation-duration: 60s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite
+}
+
+img {
+	position: absolute;
+}
+
+@keyframes rotation {
+	from {}
+	to {transform: rotate(360deg); }
+}
+
+
+@keyframes scaling {
+	0%   { transform: scale(1, 1); }
+	50%  { transform: scale(1.05, 1.05); }
+	100% { transform: scale(1, 1); } 
+}
+
+#backImage {
+	animation-name: rotation;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#frontImage {
+	animation-name: scaling;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+:root {
+	--bg: #181a1b;
+	--main-blue: #792e2e;
+	--main-blue-active: #491c1c;
+	--main-blue-hover: #8b3737;
+	--main-grey:  #3d4046;
+	--main-grey-hover: #4f545a;
+	--main-darkgrey: #26272b;
+}
+#custom-animation-1 {
+    animation-name: custom-animation-1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes custom-animation-1 {
+    0% {color: red;}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    100% {color: orange;}
+    125% {content: 'Add me on Discord';}
+}
+
+@keyframes bg_animation {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 1920px 1080px;
+	}
+
+}

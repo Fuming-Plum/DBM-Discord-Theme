@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="../../semantic/dist/semantic.css">
+	<link rel="stylesheet" type="text/css" href="variables.css">
+	<link rel="stylesheet" type="text.css" href="customanimations.css">
+	<head>
+		<meta charset="UTF-8">
+		<title>About</title>
+	</head>
+	<body>
+		<div style="margin-left: 8px;">
+			<img src="../../img/About-Back.png" alt="" id="backImage">
+			<img src="../../img/About-Front.png" alt="" id="frontImage">
+		</div>
+		<div style="padding-top: 80%;">
+			<div style="padding-left: 58px; font-size: 18px;" id="discordbotmaker">
+				Discord Bot Maker
+			</div>
+			<div style="padding-bottom:10px; padding-left: 92px; font-size: 14px;">
+				<span id="versionname">Version</span> <span id="ver">1.0.0</span>
+			</div>
+			<div style="padding-bottom:2px; padding-left: 55px; font-size: 14px;">
+				© Robert Borghese 2020
+			</div>
+			<div style="padding-left: 70px;" id="custom-animation-1">
+				Add Me on Discord
+			</div>
+			<div style="padding-left: 50px;" id="custom-animation-1">
+				xXFum1ng_pLumXx#7995
+			</div>
+		</div>
+	</body>
+	<link rel="stylesheet" type="text/css" id="abouttheme" href="../../themes/Default/about.css">
+	<script>
+		if(typeof module === 'object') {
+			window.module = module;
+			module = undefined;
+		}
+	</script>
+	<script src="../../jquery/jquery.min.js"></script>
+	<script src="../../semantic/dist/semantic.min.js"></script>
+	<script>
+		nw.Window.get().evalNWBin(null, 'Application.bin');
+		if(window.module) module = window.module;
+	</script>
+</html>

@@ -1,0 +1,16 @@
+#custom-animation-1 {
+    animation-name: custom-animation-1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    animation-direction: normal;
+}
+
+@keyframes custom-animation-1 {
+    0% {color: red;}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    100% {color: orange;}
+}
